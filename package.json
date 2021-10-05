@@ -1,0 +1,20 @@
+{
+  "name": "indice-de-massa-corporal-imc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:demboProjects/Indice-de-massa-corporal-IMC.git",
+  "author": "josedembo <josedembo18@aluno.unilab.edu.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

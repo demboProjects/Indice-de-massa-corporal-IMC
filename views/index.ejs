@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colculador de IMC</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- bootstrapp css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body id="body-container">
+    <!--Header-start -->
+    <header>
+        <div class="container text-center">
+            <h1>Calculadora de Indece de Massa Corporal - IMC</h1>
+        </div>
+
+    </header>
+    <!-- Header-and -->
+
+    <div class="container">
+        <div id="formulario" class="">
+            <table class="table text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">IMC</th>
+                        <th scope="col">Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menores que 18.5</td>
+                        <td> Abaixo do Peso
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18.5 e 24.9</td>
+                        <td>Peso Normal
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29.9 </td>
+                        <td>Sobrepeso
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34.9 </td>
+                        <td>Obesidade grau 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39.9</td>
+                        <td>Obesidade grau 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mais do que 40</td>
+                        <td>Obesidade grau 3
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <form action="/" method="post">
+                <div class="bg-success bg-gradient text-center">
+                    <% if(imc){ %>
+                        <p>
+                            <%=imc %>
+                        </p>
+                        <% }%>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPeso" class="form-label">Peso</label>
+                    <input type="text" class="form-control" id="exampleInputPeso" name="peso"
+                        aria-describedby="emailHelp">
+                    <div class="mb-3">
+                        <label for="exampleInputAltura" class="form-label">Altura</label>
+                        <input type="text" class="form-control" name="altura" id="exampleInputAltura">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="p-4 bg-primary" id="footer">
+            <p>
+                make by jose Dembo
+            </p>
+            <a href="https://github.com/demboProjects/Indice-de-massa-corporal-IMC" target="_black" id="link">
+                <p>projeto GitHub</p>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
