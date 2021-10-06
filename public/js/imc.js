@@ -7,7 +7,6 @@ function calculaIMC(peso, altura) {
 
         return `o seu IMC é ${imc.toFixed(2)} : ${result}`
     }
-
 }
 
 
